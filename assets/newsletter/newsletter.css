@@ -1,0 +1,11 @@
+#post {
+    width: 100%;
+
+    padding-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}

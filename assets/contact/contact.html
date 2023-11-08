@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/_css/header.css">
+    <link rel="stylesheet" href="../common/_css/nav.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="_css/reviews.css">
+    <link rel="stylesheet" href="_css/newsletter.css">
+    <link rel="stylesheet" href="../common/_css/sponsor.css">
+    <link rel="stylesheet" href="../common/_css/footer.css">
+    <link rel="stylesheet" href="../common/_css/icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="../_media/favicon.ico">
+    <title>Contacto</title>
+</head>
+<body>
+    <div id="header">
+        <div id="containerSlide">
+            <div id="fixed">
+                <div class="icon-phone"></div>
+                <span>916 034 590</span>
+            </div>
+            <div id="whatsapp">
+                <div class="icon-whatsapp"></div>
+                <span>+34 640 064 623</span>
+            </div>
+            <a href="https://www.instagram.com/fisioterapianeros/" target="_blank">
+                <div class="icon-instagram"></div>
+                <span>fisioterapianeros</span>
+            </a>
+            <a href="https://www.instagram.com/fisioterapianeros/" target="_blank">
+                <div class="icon-facebook2"></div>
+                <span>fisioterapianeros</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="nav">
+        <div>
+            <h1>Fisioterapia</h1>
+            <img title="Logo Fisioterapia Neros" src="../_media/img/logo.png" alt="Logo Neros">
+        </div>
+        <ul>
+            <li><span class="icon-home3"></span><a href="../../index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="../tecnics/tecnics.html">Técnicas</a></li>
+            <li><a href="#" class="selectedNav">Contacto</a></li>
+            <li><a href="../newsletter/newsletter.html">Noticias</a></li>
+        </ul>
+    </div>
+
+    <div id="reviewsContainer">
+    </div>
+
+    <div id="section">
+        <div id="newsletter">
+            <div>
+                <h2>CONTÁCTENOS AHORA MISMO</h2>
+                <form id="subscribe-blog" action="https://formsubmit.co/3a3abe25521ae62524822240dad6b50d" method="POST">
+                    <input type="text" required name="name" placeholder="Nombre Completo">
+                    <input id="newsletterEmail" type="email" required name="email" placeholder="test@test.com">
+                    <textarea name="message" required placeholder="Escriba aquí su comentario..."></textarea>
+                    <input type="submit" class="icon-forward">
+
+                    <input type="hidden" name="_next" value="https://nerosweb.000webhostapp.com/assets/contact/contact.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+    
+        <div id="map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.509593646153!2d-3.8427949238696057!3d40.3310401714535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418ea14b7a343d%3A0xfc22543524677123!2sFisioterapia%20Neros!5e0!3m2!1ses!2ses!4v1698448892823!5m2!1ses!2ses"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <div id="sponsor" style="background-color: white;">
+        <img src="../_media/img/colegioFisiosMadrid.png" alt="">
+        <img src="../_media/img/brodevs.png" alt="">
+    </div>
+
+    <div id="footer">
+        <div id="info">
+            <div id="help">
+                <h4>Ayuda</h4>
+                <a href="">Avisos legales</a>
+                <a href="">Protección de datos</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Cookies</a>
+            </div>
+
+            <div id="imgFooter">
+                <a href="#" id="goToTopLink">
+                    <img src="../_media/img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div id="contactFooter">
+                <h4>Datos de Contacto</h4>
+                <div>
+                    <span class="icon-mail2"></span>
+                    <span>fisioterapianeros@gmail.com</span>
+                </div>
+                <div>
+                    <span class="icon-phone"></span>
+                    <span>916 034 590</span>
+                </div>
+                <div>
+                    <span class="icon-whatsapp"></span>
+                    <span>+34 640 064 623</span>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <span>Copyright 2023 © | Designed By <a href="">brodevs</a></span>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxPpq3PmEmHMzdEnCtWKoyvms8n_0f7gM&libraries=places&callback=initMap"></script>
+    <script src="../common/_scripts/common.js"></script>
+</body>
+</html>

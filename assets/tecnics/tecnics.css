@@ -1,0 +1,32 @@
+#accordion {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-item {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.accordion-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.arrow-icon {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}

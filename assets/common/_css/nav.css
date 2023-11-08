@@ -1,0 +1,204 @@
+#nav {
+    width: 100%;
+    min-height: 150px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #000;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); 
+}
+
+#nav div {
+    display: flex;
+    align-items: center;
+}
+
+#nav h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#nav img {
+    width: 100px;
+    height: auto;
+
+    margin-left: 50px;
+}
+
+#nav ul {
+    width: 50%;
+    height: 50px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    list-style-type: none;
+}
+
+#nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav ul li span {
+    margin-right: 10px;
+}
+
+#nav ul li a {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.7s;
+}
+
+#nav ul li a::after {
+    width: 0;
+    height: 2px;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: black;
+    transition: width 0.7s;
+}
+
+#nav ul li a:hover::after {
+    width: 100%;
+}
+
+#nav ul li a:hover {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#nav .selectedNav {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#nav .selectedNav::after {
+    width: 100%;
+    height: 2px;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: black;
+}
+
+
+
+/* 
+=================================================================
+    Responsive
+=================================================================
+*/
+@media screen and (min-width: 1600px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+    #nav h1 {
+        font-size: 45px;
+        margin-left: 100px;
+    }
+
+    #nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #nav ul li a {
+        font-size: 15px;
+    }
+
+    #nav ul li a:hover::after {
+        width: 100%;
+    }
+    
+    #nav ul li a:hover {
+        font-size: 15px;
+    }
+
+    #nav .selectedNav {
+        font-size: 15px;
+    }
+    
+    #nav .selectedNav::after {
+        width: 100%;
+        height: 2px;
+    
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav h1 {
+        font-size: 30px;
+    }
+
+    #nav ul {
+        width: 90%;
+    }
+
+    #nav ul li a {
+        font-size: 10px;
+    }
+
+    #nav ul li a:hover::after {
+        width: 0;
+    }
+    
+    #nav ul li a:hover {
+        font-size: 10px;
+    }
+
+    #nav .selectedNav {
+        font-size: 12px;
+    }
+    
+    #nav .selectedNav::after {
+        width: 100%;
+        height: 2px;
+    
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        background-color: black;
+    }
+}

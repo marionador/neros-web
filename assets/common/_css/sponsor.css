@@ -1,0 +1,44 @@
+#sponsor {
+    width: 100%;
+
+    padding: 100px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dd98fc;
+}
+
+#sponsor img {
+    width: 200px;
+    height: auto;
+
+    margin: 0 20px;
+}
+
+
+
+/* 
+=================================================================
+    Responsive
+=================================================================
+*/
+@media screen and (min-width: 1600px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    #sponsor {
+        flex-direction: column;
+    }
+
+    #sponsor img {
+        width: 80%;
+        margin: 20px 0;
+    }
+}

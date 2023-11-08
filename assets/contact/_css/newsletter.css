@@ -1,0 +1,109 @@
+#newsletter {
+    width: 450px;
+    height: 420px;
+    max-width: 490px;
+    min-width: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #F6F6F2;
+    border-radius: 10px;
+}
+
+#newsletter:after,
+#newsletter:before {
+    content: '';
+    height: 10px;
+    display: block;
+    background-image: repeating-linear-gradient(135deg, #c8bfe7 0px, #c8bfe7 15px, transparent 15px, transparent 25px, #7da4e3 25px, #7da4e3 40px, transparent 40px, transparent 50px);
+}
+
+#newsletter h2 {
+    margin: 30px 0;
+    color: #7da4e3;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#newsletter div {
+    width: 90%;
+    margin: auto;
+}
+
+#newsletter div:before {
+    content: 'Neros_';
+    width: auto;
+    height: auto;
+    display: block;
+    border: 2px solid #c8bfe7;
+    padding: 4px;
+    position: absolute;
+    top: 36px;
+    right: -30px;
+    color: #c8bfe7;
+    font-size: 28px;
+    transform: rotate(17deg);
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+#newsletter div:after {
+    content: '@';
+    width: 50px;
+    height: 50px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: -10px;
+    color: #c8bfe7;
+    font-size: 50px;
+    transform: rotate(-30deg);
+    font-weight: 400;
+    border-radius: 99px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#newsletter input[type="text"],
+#newsletter textarea,
+#newsletter input[type="email"] {
+    width: 100%;
+    padding: 15px 0;
+
+    border: 0;
+    font-size: 14px;
+    background-color: transparent;
+    color: #999;
+    border-top: 1px solid #7da4e3;
+    outline: none;
+}
+
+#newsletter textarea {
+    resize: none;
+    height: 100px;
+    border-bottom: 1px solid #7da4e3;
+}
+
+#newsletter input::-webkit-input-placeholder, #newsletter textarea::-webkit-input-placeholder {color: #d0d0d0;}
+
+#newsletter input[type="submit"] {
+    margin: 15px 5px;
+    background-color: #83B3DB;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .7s all ease-in-out;
+    box-shadow: 0px 0px 0px 5px #83B3DB;
+}
+
+#newsletter input[type="submit"]:hover {
+    background-color: #c8bfe7;
+    box-shadow: 0px 0px 0px 5px #c8bfe7;
+}
