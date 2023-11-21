@@ -1,9 +1,8 @@
 #reviewsContainer {
-    margin-left: 300px;
-    position: relative;
-    top: 50px;
     width: 350px;
     height: 300px;
+    margin: auto;
+    margin-top: 100px;
     transform-style: preserve-3d;
     animation: rotate 32s linear infinite;
 }

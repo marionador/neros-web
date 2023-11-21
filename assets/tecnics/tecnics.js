@@ -15,7 +15,7 @@ const accordionData = [
     { title: "Suelo Pélvico", content: "Se centra en la prevención y el tratamiento de todos los tipos de trastornos funcionales de las regiones abdominal, pélvica y lumbar. Muchas de las afecciones de esta rama están asociadas al embarazo y post-parto." }
 ];
 
-const accordion = document.getElementById("accordion");
+const accordion = document.getElementById("accordions");
 
 accordionData.forEach((item, index) => {
     const accordionItem = document.createElement("div");
@@ -33,14 +33,12 @@ accordionData.forEach((item, index) => {
     content.textContent = item.content;
 
     header.addEventListener("click", () => {
-        if (content.style.display === "block") {
-            content.style.display = "none";
-            header.querySelector('.arrow-icon').classList.remove('icon-expand_less');
-            header.querySelector('.arrow-icon').classList.add('icon-expand_more');
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "inline";
+            header.querySelector('.arrow-icon').style.transform = 'rotate(180deg)';
         } else {
-            content.style.display = "block";
-            header.querySelector('.arrow-icon').classList.remove('icon-expand_more');
-            header.querySelector('.arrow-icon').classList.add('icon-expand_less');
+            content.style.display = "none";
+            header.querySelector('.arrow-icon').style.transform = 'rotate(0deg)';
         }
     });
 
